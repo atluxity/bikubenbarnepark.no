@@ -3,9 +3,70 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bikuben Barnepark</title>
-    <meta name="description" content="Nettside for FORENINGEN BIKUBEN BARNEPARK, org.nr. 934371275.">
+    <title>Bikuben Barnepark på Høybråten</title>
+    <meta
+      name="description"
+      content="Bikuben Barnepark er en nærmiljøpark på Høybråten i Oslo, drevet av FORENINGEN BIKUBEN BARNEPARK."
+    >
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#395f34">
+    <link rel="canonical" href="https://bikubenbarnepark.no/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bikuben Barnepark">
+    <meta property="og:title" content="Bikuben Barnepark på Høybråten">
+    <meta
+      property="og:description"
+      content="En nærmiljøpark i Høybråtenveien 69, 1086 Oslo."
+    >
+    <meta property="og:url" content="https://bikubenbarnepark.no/">
+    <meta property="og:image" content="https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Oversiktsbilde fra Bikuben Barnepark på Høybråten">
+    <meta property="og:locale" content="nb_NO">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bikuben Barnepark på Høybråten">
+    <meta
+      name="twitter:description"
+      content="En nærmiljøpark i Høybråtenveien 69, 1086 Oslo."
+    >
+    <meta name="twitter:image" content="https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Park",
+        "name": "Bikuben Barnepark",
+        "description": "Bikuben Barnepark er en nærmiljøpark på Høybråten i Oslo.",
+        "url": "https://bikubenbarnepark.no/",
+        "image": "https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Høybråtenveien 69",
+          "postalCode": "1086",
+          "addressLocality": "Oslo",
+          "addressCountry": "NO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 59.944292027157864,
+          "longitude": 10.924050830087147
+        },
+        "maintainer": {
+          "@type": "Organization",
+          "name": "FORENINGEN BIKUBEN BARNEPARK",
+          "identifier": "934371275",
+          "url": "https://bikubenbarnepark.no/"
+        },
+        "sameAs": [
+          "https://oslobyleksikon.no/side/Bikuben",
+          "https://www.klimaoslo.no/skli-inn-i-lekemodus/"
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -50,10 +111,35 @@
           src="https://www.openstreetmap.org/export/embed.html?bbox=10.9204%2C59.9427%2C10.9277%2C59.9459&amp;layer=mapnik&amp;marker=59.944292027157864%2C10.924050830087147"
           loading="lazy"
         ></iframe>
+        <noscript>
+          <p>
+            Se kart til Bikuben Barnepark hos
+            <a href="https://www.openstreetmap.org/?mlat=59.944292027157864&amp;mlon=10.924050830087147#map=17/59.944292027157864/10.924050830087147">OpenStreetMap</a>.
+          </p>
+        </noscript>
       </section>
 
       <figure class="photo-strip">
-        <img src="gammelt-oversiktsbilde.jpg" alt="Oversiktsbilde fra Bikuben Barnepark">
+        <picture>
+          <source
+            type="image/webp"
+            srcset="assets/bikuben-oversikt-640.webp 640w, assets/bikuben-oversikt-960.webp 960w"
+            sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
+          >
+          <source
+            type="image/jpeg"
+            srcset="assets/bikuben-oversikt-640.jpg 640w, gammelt-oversiktsbilde.jpg 960w"
+            sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
+          >
+          <img
+            src="gammelt-oversiktsbilde.jpg"
+            width="960"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            alt="Oversiktsbilde fra Bikuben Barnepark"
+          >
+        </picture>
         <figcaption>Bikuben Barnepark på Høybråten.</figcaption>
       </figure>
 

@@ -1,0 +1,25 @@
+# Bikuben Barnepark
+
+Bikuben Barnepark is a neighborhood park at Høybråtenveien 69, 1086 Oslo, Norway.
+
+The site represents FORENINGEN BIKUBEN BARNEPARK, organization number 934371275. The association works to make the park more available to people in the local area, in cooperation with Oslo kommune.
+
+Key facts:
+- Name: Bikuben Barnepark
+- Official association name: FORENINGEN BIKUBEN BARNEPARK
+- Organization number: 934371275
+- Address: Høybråtenveien 69, 1086 Oslo
+- Coordinates: 59.944292027157864, 10.924050830087147
+- Area: Høybråten, bydel Stovner, Oslo
+- Primary image: https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg
+
+Sources used on the site:
+- Oslo Byleksikon about the name Bikuben: https://oslobyleksikon.no/side/Bikuben
+- KlimaOslo article mentioning Bikuben: https://www.klimaoslo.no/skli-inn-i-lekemodus/
+- Oslo kommune page about Høybråten barnepark: https://www.oslo.kommune.no/kunngjoringer/bymiljoetaten-leter-etter-leietaker-til-bygningene-pa-hoybraten-barnepark/
+
+Static-site scope:
+- This site has no public API.
+- This site has no OAuth/OIDC-protected API.
+- This site has no MCP server.
+- This site does not expose WebMCP browser tools.

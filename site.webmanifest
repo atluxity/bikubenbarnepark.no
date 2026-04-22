@@ -1,0 +1,11 @@
+{
+  "name": "Bikuben Barnepark",
+  "short_name": "Bikuben",
+  "description": "Bikuben Barnepark på Høybråten i Oslo.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#fbfcf8",
+  "theme_color": "#395f34",
+  "lang": "no"
+}
