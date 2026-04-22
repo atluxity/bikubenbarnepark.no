@@ -13,6 +13,7 @@ Static website for FORENINGEN BIKUBEN BARNEPARK.
 ## Files
 
 - `index.html`: main static page with SEO, Open Graph, Twitter card, and JSON-LD metadata.
+- `index.md`: Markdown representation for agents. Traefik can serve this when `/` is requested with `Accept: text/markdown`.
 - `styles.css`: site layout and accessibility styles.
 - `robots.txt`: crawler policy and sitemap reference.
 - `sitemap.xml`: sitemap for the root page.
@@ -23,6 +24,16 @@ Static website for FORENINGEN BIKUBEN BARNEPARK.
 - `favicon.svg`: SVG favicon.
 - `gammelt-oversiktsbilde.jpg`: original source image.
 - `assets/`: optimized derived images for page rendering and social sharing.
+
+## Markdown for Agents
+
+The repo includes `index.md` as a maintained Markdown version of the homepage.
+
+Expected edge behavior:
+
+- Browser/default requests for `/` should continue to serve `index.html` as `text/html`.
+- Requests for `/` with `Accept: text/markdown` can be routed by Traefik to `index.md`.
+- The Markdown response should use `Content-Type: text/markdown; charset=utf-8`.
 
 ## Image Workflow
 

@@ -4,4 +4,8 @@
     <loc>https://bikubenbarnepark.no/</loc>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://bikubenbarnepark.no/index.md</loc>
+    <changefreq>monthly</changefreq>
+  </url>
 </urlset>

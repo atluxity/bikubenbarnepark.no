@@ -12,6 +12,7 @@ Key facts:
 - Coordinates: 59.944292027157864, 10.924050830087147
 - Area: Høybråten, bydel Stovner, Oslo
 - Primary image: https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg
+- Markdown version: https://bikubenbarnepark.no/index.md
 
 Sources used on the site:
 - Oslo Byleksikon about the name Bikuben: https://oslobyleksikon.no/side/Bikuben
@@ -23,3 +24,4 @@ Static-site scope:
 - This site has no OAuth/OIDC-protected API.
 - This site has no MCP server.
 - This site does not expose WebMCP browser tools.
+- Markdown content is available at /index.md. The edge layer can serve it for requests to / with Accept: text/markdown.
