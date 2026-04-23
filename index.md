@@ -34,4 +34,11 @@ Navnet Bikuben har en lokal historie på Høybråten. [Oslo Byleksikon](https://
 
 ## Bilde
 
-Oversiktsbilde fra Bikuben Barnepark: https://bikubenbarnepark.no/assets/bikuben-social-1200x630.jpg
+Oversiktsbilde fra Bikuben Barnepark: https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
+
+Flere bilder:
+
+- Sklie og klatrestativ: https://bikubenbarnepark.no/assets/park-sklie-760.jpg
+- Steiner i sanden: https://bikubenbarnepark.no/assets/park-steiner-760.jpg
+- Fellesgrill og benker: https://bikubenbarnepark.no/assets/park-grill-760.jpg
+- Lekehytte og uteplass: https://bikubenbarnepark.no/assets/park-hytte-benk-760.jpg

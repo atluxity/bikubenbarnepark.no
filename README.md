@@ -22,7 +22,7 @@ Static website for FORENINGEN BIKUBEN BARNEPARK.
 - `.well-known/agent-skills/index.json`: empty agent skills index declaring that this static site has no agent tools.
 - `site.webmanifest`: basic web app metadata.
 - `favicon.svg`: SVG favicon.
-- `gammelt-oversiktsbilde.jpg`: original source image.
+- `oversikt1.png`, `sklie.png`, `steiner.png`, `grill.png`, `hytte-benk.png`: source images.
 - `assets/`: optimized derived images for page rendering and social sharing.
 
 ## Markdown for Agents
@@ -41,8 +41,17 @@ The original image is kept unchanged. Derived assets can be regenerated with Ima
 
 Current generated assets:
 
-- `assets/bikuben-oversikt-640.jpg`
-- `assets/bikuben-oversikt-640.webp`
-- `assets/bikuben-oversikt-960.webp`
-- `assets/bikuben-social-1200x630.jpg`
-- `assets/bikuben-social-1200x630.webp`
+- `assets/park-oversikt-640.jpg`
+- `assets/park-oversikt-640.webp`
+- `assets/park-oversikt-960.jpg`
+- `assets/park-oversikt-960.webp`
+- `assets/park-social-1200x630.jpg`
+- `assets/park-social-1200x630.webp`
+- `assets/park-sklie-760.jpg`
+- `assets/park-sklie-760.webp`
+- `assets/park-steiner-760.jpg`
+- `assets/park-steiner-760.webp`
+- `assets/park-grill-760.jpg`
+- `assets/park-grill-760.webp`
+- `assets/park-hytte-benk-760.jpg`
+- `assets/park-hytte-benk-760.webp`
