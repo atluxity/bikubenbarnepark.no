@@ -32,13 +32,13 @@ Foreningen arbeider for sosialt samvær og aktivitet i Bikuben Barnepark. Målet
 
 Navnet Bikuben har en lokal historie på Høybråten. [Oslo Byleksikon](https://oslobyleksikon.no/side/Bikuben) skriver at veien fikk navn etter en lekeplass som ble gitt til Høybråtens befolkning, og at bikuben viser til symbolet til Oslo Arbeidersamfunn.
 
-## Bilde
+## Bilder
 
-Oversiktsbilde fra Bikuben Barnepark: https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
+Droneoversikt fra Bikuben Barnepark: https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
 
 Flere bilder:
 
-- Sklie og klatrestativ: https://bikubenbarnepark.no/assets/park-sklie-760.jpg
-- Steiner i sanden: https://bikubenbarnepark.no/assets/park-steiner-760.jpg
+- Sklie og klatrestativ: https://bikubenbarnepark.no/assets/park-slide-760.jpg
+- Steiner i sanden: https://bikubenbarnepark.no/assets/park-stones-760.jpg
 - Fellesgrill og benker: https://bikubenbarnepark.no/assets/park-grill-760.jpg
-- Lekehytte og uteplass: https://bikubenbarnepark.no/assets/park-hytte-benk-760.jpg
+- Lekehytte og uteplass: https://bikubenbarnepark.no/assets/park-playhouse-bench-760.jpg

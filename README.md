@@ -22,7 +22,7 @@ Static website for FORENINGEN BIKUBEN BARNEPARK.
 - `.well-known/agent-skills/index.json`: empty agent skills index declaring that this static site has no agent tools.
 - `site.webmanifest`: basic web app metadata.
 - `favicon.svg`: SVG favicon.
-- `oversikt1.png`, `sklie.png`, `steiner.png`, `grill.png`, `hytte-benk.png`: source images.
+- `assets/source/`: original source images, kept unchanged.
 - `assets/`: optimized derived images for page rendering and social sharing.
 
 ## Markdown for Agents
@@ -37,21 +37,32 @@ Expected edge behavior:
 
 ## Image Workflow
 
-The original image is kept unchanged. Derived assets can be regenerated with ImageMagick and WebP tools if needed.
+Original images are kept unchanged. Derived assets can be regenerated with ImageMagick and WebP tools if needed.
+
+Current source images:
+
+- `assets/source/park-drone-overview-source.jpeg`
+- `assets/source/park-ground-overview-source.png`
+- `assets/source/park-slide-source.png`
+- `assets/source/park-stones-source.png`
+- `assets/source/park-grill-source.png`
+- `assets/source/park-playhouse-bench-source.png`
 
 Current generated assets:
 
-- `assets/park-oversikt-640.jpg`
-- `assets/park-oversikt-640.webp`
-- `assets/park-oversikt-960.jpg`
-- `assets/park-oversikt-960.webp`
+- `assets/park-overview-720.jpg`
+- `assets/park-overview-720.webp`
+- `assets/park-overview-1080.jpg`
+- `assets/park-overview-1080.webp`
+- `assets/park-overview-1440.jpg`
+- `assets/park-overview-1440.webp`
 - `assets/park-social-1200x630.jpg`
 - `assets/park-social-1200x630.webp`
-- `assets/park-sklie-760.jpg`
-- `assets/park-sklie-760.webp`
-- `assets/park-steiner-760.jpg`
-- `assets/park-steiner-760.webp`
+- `assets/park-slide-760.jpg`
+- `assets/park-slide-760.webp`
+- `assets/park-stones-760.jpg`
+- `assets/park-stones-760.webp`
 - `assets/park-grill-760.jpg`
 - `assets/park-grill-760.webp`
-- `assets/park-hytte-benk-760.jpg`
-- `assets/park-hytte-benk-760.webp`
+- `assets/park-playhouse-bench-760.jpg`
+- `assets/park-playhouse-bench-760.webp`

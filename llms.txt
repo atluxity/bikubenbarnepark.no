@@ -11,7 +11,7 @@ Key facts:
 - Address: Høybråtenveien 69, 1086 Oslo
 - Coordinates: 59.944292027157864, 10.924050830087147
 - Area: Høybråten, bydel Stovner, Oslo
-- Primary image: https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
+- Primary image: drone overview at https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
 - Markdown version: https://bikubenbarnepark.no/index.md
 
 Sources used on the site:
