@@ -6,6 +6,23 @@ Bikuben Barnepark er en nærmiljøpark i Høybråtenveien 69. Foreningen jobber 
 
 Høybråtenveien 69, 1086 Oslo
 
+## Åpen dag
+
+Søndag 7. juni 2026 kl. 10.30-12.30 inviterer Foreningen Bikuben Barnepark til åpen dag i parken på Høybråtenveien 69.
+
+Kom og se vårt nye hus, ta en titt på uteområdet og hjelp oss å forme Bikuben Barnepark videre sammen med nærmiljøet.
+
+Dette skjer:
+
+- Ta en titt inn i huset og uteområdet
+- Gratis pølse
+- Informasjon om planene for Bikuben Barnepark
+- Innspill, ideer og dialog med beboere på Høybråten
+
+Vi ønsker spesielt innspill om aktiviteter og tilbud i nærmiljøet, bruk av huset og uteområdet, og hvordan Bikuben kan bidra til et sterkere lokalsamfunn.
+
+Prosjektet er støttet av Sparebankstiftelsen DNB og Lions Club Høybråten.
+
 ## Kart
 
 Parken ligger på Høybråten i bydel Stovner, med inngang fra Høybråtenveien.

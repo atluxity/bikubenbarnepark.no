@@ -13,6 +13,7 @@ Key facts:
 - Area: Høybråten, bydel Stovner, Oslo
 - Primary image: drone overview at https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
 - Primary video: decorative drone clip at https://bikubenbarnepark.no/assets/video/park-overview-background.mp4
+- Upcoming event: Åpen dag i Bikuben Barnepark on 2026-06-07 from 10:30 to 12:30 at Høybråtenveien 69
 - Markdown version: https://bikubenbarnepark.no/index.md
 
 Sources used on the site:
