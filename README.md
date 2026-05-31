@@ -24,6 +24,7 @@ Static website for FORENINGEN BIKUBEN BARNEPARK.
 - `favicon.svg`: SVG favicon.
 - `assets/source/`: original source images, kept unchanged.
 - `assets/`: optimized derived images for page rendering and social sharing.
+- `assets/video/`: optimized derived video and poster assets for page rendering.
 
 ## Markdown for Agents
 
@@ -37,7 +38,7 @@ Expected edge behavior:
 
 ## Image Workflow
 
-Original images are kept unchanged. Derived assets can be regenerated with ImageMagick and WebP tools if needed.
+Original images are kept unchanged. Derived image assets can be regenerated with ImageMagick and WebP tools if needed. Derived video assets can be regenerated with FFmpeg from local raw drone footage.
 
 Current source images:
 
@@ -66,3 +67,6 @@ Current generated assets:
 - `assets/park-grill-760.webp`
 - `assets/park-playhouse-bench-760.jpg`
 - `assets/park-playhouse-bench-760.webp`
+- `assets/video/park-overview-background.mp4`
+- `assets/video/park-overview-background.webm`
+- `assets/video/park-overview-poster.jpg`

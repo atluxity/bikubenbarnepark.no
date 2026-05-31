@@ -12,6 +12,7 @@ Key facts:
 - Coordinates: 59.944292027157864, 10.924050830087147
 - Area: Høybråten, bydel Stovner, Oslo
 - Primary image: drone overview at https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
+- Primary video: decorative drone clip at https://bikubenbarnepark.no/assets/video/park-overview-background.mp4
 - Markdown version: https://bikubenbarnepark.no/index.md
 
 Sources used on the site:

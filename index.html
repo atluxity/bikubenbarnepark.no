@@ -119,26 +119,41 @@
         </noscript>
       </section>
 
-      <figure class="photo-strip">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="assets/park-overview-720.webp 720w, assets/park-overview-1080.webp 1080w, assets/park-overview-1440.webp 1440w"
-            sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
+      <figure class="media-hero">
+        <div class="media-hero-frame">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="assets/park-overview-720.webp 720w, assets/park-overview-1080.webp 1080w, assets/park-overview-1440.webp 1440w"
+              sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
+            >
+            <source
+              type="image/jpeg"
+              srcset="assets/park-overview-720.jpg 720w, assets/park-overview-1080.jpg 1080w, assets/park-overview-1440.jpg 1440w"
+              sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
+            >
+            <img
+              src="assets/park-overview-1440.jpg"
+              width="1440"
+              height="810"
+              decoding="async"
+              alt="Droneoversikt over lekeplassen og grøntområdet i Bikuben Barnepark"
+            >
+          </picture>
+          <video
+            class="media-hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            poster="assets/video/park-overview-poster.jpg"
+            aria-hidden="true"
           >
-          <source
-            type="image/jpeg"
-            srcset="assets/park-overview-720.jpg 720w, assets/park-overview-1080.jpg 1080w, assets/park-overview-1440.jpg 1440w"
-            sizes="(max-width: 860px) calc(100vw - 36px), calc(100vw - 128px)"
-          >
-          <img
-            src="assets/park-overview-1440.jpg"
-            width="1440"
-            height="810"
-            decoding="async"
-            alt="Droneoversikt over lekeplassen og grøntområdet i Bikuben Barnepark"
-          >
-        </picture>
+            <source src="assets/video/park-overview-background.webm" type="video/webm" media="(min-width: 861px) and (prefers-reduced-motion: no-preference)">
+            <source src="assets/video/park-overview-background.mp4" type="video/mp4" media="(min-width: 861px) and (prefers-reduced-motion: no-preference)">
+          </video>
+        </div>
         <figcaption>Bikuben Barnepark på Høybråten.</figcaption>
       </figure>
 
