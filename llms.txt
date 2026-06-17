@@ -14,6 +14,9 @@ Key facts:
 - Primary image: drone overview at https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
 - Primary video: decorative drone clip at https://bikubenbarnepark.no/assets/video/park-overview-background.mp4
 - Upcoming event: Åpen dag i Bikuben Barnepark on 2026-06-07 from 10:30 to 12:30 at Høybråtenveien 69
+- Feedback form: https://bikubenbarnepark.no/innspill/
+- Privacy notice: https://bikubenbarnepark.no/personvern/
+- Feedback API endpoint: POST https://bikubenbarnepark.no/api/feedback
 - Markdown version: https://bikubenbarnepark.no/index.md
 
 Sources used on the site:
@@ -22,7 +25,7 @@ Sources used on the site:
 - Oslo kommune page about Høybråten barnepark: https://www.oslo.kommune.no/kunngjoringer/bymiljoetaten-leter-etter-leietaker-til-bygningene-pa-hoybraten-barnepark/
 
 Static-site scope:
-- This site has no public API.
+- This site has a feedback form endpoint at /api/feedback.
 - This site has no OAuth/OIDC-protected API.
 - This site has no MCP server.
 - This site does not expose WebMCP browser tools.

@@ -23,7 +23,7 @@ body {
 img { display: block; max-width: 100%; }
 a { color: inherit; }
 p a, li a { color: var(--green); font-weight: 750; text-decoration-thickness: 0.08em; text-underline-offset: 0.2em; }
-a:focus-visible, iframe:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, iframe:focus-visible { outline: 3px solid var(--gold); outline-offset: 4px; }
 
 .site-header {
   position: sticky; top: 0; z-index: 20;
@@ -46,6 +46,7 @@ h1 { max-width: 11ch; font-size: clamp(3.3rem, 8vw, 7.4rem); }
 h2 { max-width: 14ch; font-size: clamp(1.65rem, 2.8vw, 2.7rem); }
 h3 { color: var(--green); font-size: 1rem; }
 p { margin: 0; }
+button, input, select, textarea { font: inherit; }
 .lead { max-width: 660px; margin-top: 24px; color: var(--muted); font-size: clamp(1.1rem, 1.5vw, 1.28rem); }
 
 .location-note { max-width: 280px; padding-bottom: 6px; color: var(--muted); }
@@ -63,6 +64,27 @@ dd { margin: 2px 0 0; color: var(--ink); }
 .event-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px clamp(24px, 4vw, 44px); margin-top: 22px; }
 .event-details ul { display: grid; gap: 8px; margin: 12px 0 0; padding-left: 1.15rem; color: var(--muted); }
 .event-note { padding-top: 18px; border-top: 1px solid var(--line); }
+.event-actions { margin-top: 18px; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; color: #f8fff4; background: var(--green); border: 0; border-radius: 999px; font-weight: 850; text-decoration: none; cursor: pointer; }
+.button:hover { background: #2d4f29; }
+
+.page-hero { padding: clamp(46px, 7vw, 84px) 0 clamp(28px, 5vw, 48px); }
+.page-hero h1 { max-width: 12ch; }
+.narrow-page { max-width: 860px; }
+.form-section { display: grid; grid-template-columns: minmax(230px, 0.4fr) minmax(0, 1fr); gap: clamp(24px, 5vw, 56px); align-items: start; margin-bottom: clamp(44px, 7vw, 84px); padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.form-copy p { margin-top: 14px; color: var(--muted); }
+.feedback-form { display: grid; gap: 16px; }
+.feedback-form label { color: var(--green); font-weight: 850; }
+.feedback-form input, .feedback-form select, .feedback-form textarea { width: 100%; padding: 12px 14px; color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
+.feedback-form textarea { resize: vertical; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.checkbox-row { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px; align-items: start; color: var(--ink); }
+.checkbox-row input { width: auto; margin-top: 0.25em; }
+.form-hint { color: var(--muted); font-size: 0.95rem; }
+.hidden-field { position: absolute; left: -100vw; width: 1px; height: 1px; overflow: hidden; }
+.text-page { display: grid; gap: 18px; margin-bottom: clamp(44px, 7vw, 84px); padding: 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.text-page p { color: var(--muted); }
+.page-actions { margin-top: 24px; }
 
 .map-section { display: grid; grid-template-columns: minmax(260px, 0.55fr) minmax(320px, 1fr); gap: clamp(20px, 4vw, 48px); align-items: stretch; margin-bottom: clamp(26px, 5vw, 48px); padding: 20px; background: var(--soft); border: 1px solid var(--line); border-radius: 8px; }
 .map-copy { align-self: center; max-width: 390px; }
@@ -99,7 +121,7 @@ dd { margin: 2px 0 0; color: var(--ink); }
 @media (max-width: 860px) {
   .site-header { align-items: flex-start; flex-direction: column; gap: 10px; }
   .nav { justify-content: flex-start; }
-  .topline, .event-card, .map-section { grid-template-columns: 1fr; }
+  .topline, .event-card, .form-section, .map-section { grid-template-columns: 1fr; }
   .event-date { min-height: auto; }
   h1 { max-width: 9ch; font-size: clamp(3rem, 16vw, 5rem); }
   .content-grid { grid-template-columns: 1fr; }
@@ -108,5 +130,5 @@ dd { margin: 2px 0 0; color: var(--ink); }
 }
 
 @media (max-width: 560px) {
-  .event-details, .gallery { grid-template-columns: 1fr; }
+  .event-details, .form-grid, .gallery { grid-template-columns: 1fr; }
 }

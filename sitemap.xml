@@ -5,6 +5,14 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://bikubenbarnepark.no/innspill/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://bikubenbarnepark.no/personvern/</loc>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
     <loc>https://bikubenbarnepark.no/index.md</loc>
     <changefreq>monthly</changefreq>
   </url>

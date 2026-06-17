@@ -23,6 +23,12 @@ Vi ønsker spesielt innspill om aktiviteter og tilbud i nærmiljøet, bruk av hu
 
 Prosjektet er støttet av Sparebankstiftelsen DNB og Lions Club Høybråten.
 
+## Innspill
+
+Besøkende kan dele ideer, tilbakemeldinger, meninger eller tilbud om å bidra via innspillsskjemaet: https://bikubenbarnepark.no/innspill/
+
+Kontaktopplysninger er valgfrie og brukes bare for eventuell oppfølging når den som sender inn samtykker til lagring. Personvernerklæring: https://bikubenbarnepark.no/personvern/
+
 ## Kart
 
 Parken ligger på Høybråten i bydel Stovner, med inngang fra Høybråtenveien.

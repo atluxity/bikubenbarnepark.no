@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Del innspill til Bikuben Barnepark</title>
+    <meta
+      name="description"
+      content="Del ideer, tilbakemeldinger, meninger eller tilbud om å bidra til Bikuben Barnepark."
+    >
+    <meta name="robots" content="index,follow">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="theme-color" content="#395f34">
+    <link rel="canonical" href="https://bikubenbarnepark.no/innspill/">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Bikuben Barnepark">
+    <meta property="og:title" content="Del innspill til Bikuben Barnepark">
+    <meta property="og:description" content="Har du en ide, mening eller noe du kan bidra med? Del det med Foreningen Bikuben Barnepark.">
+    <meta property="og:url" content="https://bikubenbarnepark.no/innspill/">
+    <meta property="og:image" content="https://bikubenbarnepark.no/assets/park-social-1200x630.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Oversiktsbilde fra Bikuben Barnepark på Høybråten">
+    <meta property="og:locale" content="nb_NO">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Bikuben Barnepark">
+        <span class="brand-mark">B</span>
+        <span>Bikuben Barnepark</span>
+      </a>
+      <nav class="nav" aria-label="Hovedmeny">
+        <a href="/innspill/">Innspill</a>
+        <a href="/#kart">Kart</a>
+        <a href="/#parken">Parken</a>
+        <a href="/personvern/">Personvern</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="feedback-title">
+        <p class="eyebrow">Innspill</p>
+        <h1 id="feedback-title">Hva kan Bikuben bli for nærmiljøet?</h1>
+        <p class="lead">
+          Del en ide, en mening, en tilbakemelding eller noe du kan bidra med.
+          Du kan sende inn anonymt. Kontaktinfo er bare nødvendig hvis du vil
+          åpne for eventuell oppfølging.
+        </p>
+      </section>
+
+      <section class="form-section" aria-labelledby="feedback-form-title">
+        <div class="form-copy">
+          <h2 id="feedback-form-title">Del innspill</h2>
+          <p>
+            Skriv kort eller langt. Vi bruker innspillene til å forstå hva folk
+            ønsker seg i parken og huset.
+          </p>
+        </div>
+        <form class="feedback-form" action="/api/feedback" method="post">
+          <input type="hidden" id="form_token" name="form_token" value="">
+          <p class="hidden-field" aria-hidden="true">
+            <label for="website">Nettside</label>
+            <input id="website" name="website" tabindex="-1" autocomplete="off">
+          </p>
+
+          <label for="topic">Hva gjelder det? <span aria-hidden="true">*</span></label>
+          <select id="topic" name="topic" required>
+            <option value="">Velg kategori</option>
+            <option value="ide">Ide</option>
+            <option value="tilbakemelding">Tilbakemelding</option>
+            <option value="mening">Mening</option>
+            <option value="bidra">Jeg kan bidra</option>
+            <option value="annet">Annet</option>
+          </select>
+
+          <label for="message">Innspill <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="7" maxlength="3000" required></textarea>
+
+          <label for="help_text">Hvis du kan bidra, hva kan du hjelpe med?</label>
+          <textarea id="help_text" name="help_text" rows="4" maxlength="3000" placeholder="For eksempel snekring, arrangement, planter, mat, økonomi, foto, kommunikasjon eller annet."></textarea>
+
+          <div class="form-grid">
+            <p>
+              <label for="name">Navn (valgfritt)</label>
+              <input id="name" name="name" autocomplete="name" maxlength="500">
+            </p>
+            <p>
+              <label for="contact">E-post eller telefon (valgfritt)</label>
+              <input id="contact" name="contact" autocomplete="email" maxlength="500">
+            </p>
+          </div>
+
+          <label class="checkbox-row" for="consent">
+            <input id="consent" name="consent" type="checkbox" value="yes">
+            <span>
+              Jeg samtykker til at Foreningen Bikuben Barnepark kan lagre
+              kontaktopplysningene mine og eventuelt kontakte meg om innspillet.
+              Les mer i <a href="/personvern/">personvernerklæringen</a>.
+            </span>
+          </label>
+          <p class="form-hint">
+            Samtykke kreves bare hvis du legger igjen navn, kontaktinfo eller
+            tekst om hva du kan bidra med.
+          </p>
+
+          <button class="button" type="submit">Send innspill</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>FORENINGEN BIKUBEN BARNEPARK</p>
+      <p>Org.nr. 934371275 · Høybråtenveien 69, 1086 Oslo</p>
+    </footer>
+    <script>
+      const tokenInput = document.getElementById('form_token');
+      fetch('/api/form-token', { credentials: 'same-origin', cache: 'no-store' })
+        .then((response) => response.ok ? response.json() : Promise.reject())
+        .then((data) => { tokenInput.value = data.token || ''; })
+        .catch(() => { tokenInput.value = ''; });
+      const consent = document.getElementById('consent');
+      const personalFields = ['name', 'contact', 'help_text'].map((id) => document.getElementById(id));
+      function syncConsentRequirement() {
+        const needsConsent = personalFields.some((field) => field.value.trim().length > 0);
+        consent.required = needsConsent;
+        consent.setCustomValidity(needsConsent && !consent.checked ? 'Kryss av for samtykke når du legger igjen kontaktopplysninger eller tilbud om hjelp.' : '');
+      }
+      consent.addEventListener('change', syncConsentRequirement);
+      personalFields.forEach((field) => field.addEventListener('input', syncConsentRequirement));
+      syncConsentRequirement();
+    </script>
+  </body>
+</html>

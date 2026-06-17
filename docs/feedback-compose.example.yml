@@ -1,0 +1,25 @@
+services:
+  feedback:
+    build:
+      context: ..
+      dockerfile: Dockerfile
+    environment:
+      BIKUBEN_FEEDBACK_DB: /var/lib/bikuben-feedback/feedback.sqlite3
+      BIKUBEN_TRUST_PROXY_HEADERS: "1"
+      BIKUBEN_MAX_REQUEST_BYTES: "32768"
+    env_file:
+      - /opt/bikubenbarnepark-site/secrets/feedback.env
+    volumes:
+      - /var/lib/bikuben-feedback:/var/lib/bikuben-feedback
+    expose:
+      - "8095"
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import json, urllib.request; data=json.load(urllib.request.urlopen('http://127.0.0.1:8095/api/health', timeout=3)); raise SystemExit(0 if data.get('status') == 'ok' else 1)"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

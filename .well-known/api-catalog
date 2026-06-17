@@ -1,3 +1,19 @@
 {
-  "linkset": []
+  "apis": [
+    {
+      "name": "Feedback submission endpoint",
+      "description": "Receives low-threshold visitor feedback for Foreningen Bikuben Barnepark.",
+      "method": "POST",
+      "url": "https://bikubenbarnepark.no/api/feedback",
+      "contentType": "application/x-www-form-urlencoded",
+      "fields": [
+        {"name": "topic", "required": true},
+        {"name": "message", "required": true},
+        {"name": "help_text", "required": false},
+        {"name": "name", "required": false},
+        {"name": "contact", "required": false},
+        {"name": "consent", "required": "when personal details are provided"}
+      ]
+    }
+  ]
 }
