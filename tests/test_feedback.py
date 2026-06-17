@@ -184,6 +184,14 @@ class FeedbackPageTests(unittest.TestCase):
         self.assertIn("Skriv inn et innspill.", form_script)
         self.assertIn("Innspillet må inneholde minst tre tegn.", form_script)
 
+    def test_privacy_page_is_non_technical_and_has_minimal_contact(self) -> None:
+        privacy_html = Path("personvern/index.html").read_text()
+        self.assertNotIn("Teknisk spamvern", privacy_html)
+        self.assertNotIn("rate limiting", privacy_html)
+        self.assertNotIn("IP-adresser", privacy_html)
+        self.assertIn("organisasjonsnummer 934 371 275", privacy_html)
+        self.assertIn('mailto:thomoell@gmail.com', privacy_html)
+
 
 if __name__ == "__main__":
     unittest.main()
