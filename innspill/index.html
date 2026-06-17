@@ -25,6 +25,7 @@
     <meta property="og:image:alt" content="Oversiktsbilde fra Bikuben Barnepark på Høybråten">
     <meta property="og:locale" content="nb_NO">
     <link rel="stylesheet" href="/styles.css">
+    <script src="/assets/feedback-form.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -115,22 +116,5 @@
       <p>FORENINGEN BIKUBEN BARNEPARK</p>
       <p>Org.nr. 934371275 · Høybråtenveien 69, 1086 Oslo</p>
     </footer>
-    <script>
-      const tokenInput = document.getElementById('form_token');
-      fetch('/api/form-token', { credentials: 'same-origin', cache: 'no-store' })
-        .then((response) => response.ok ? response.json() : Promise.reject())
-        .then((data) => { tokenInput.value = data.token || ''; })
-        .catch(() => { tokenInput.value = ''; });
-      const consent = document.getElementById('consent');
-      const personalFields = ['name', 'contact', 'help_text'].map((id) => document.getElementById(id));
-      function syncConsentRequirement() {
-        const needsConsent = personalFields.some((field) => field.value.trim().length > 0);
-        consent.required = needsConsent;
-        consent.setCustomValidity(needsConsent && !consent.checked ? 'Kryss av for samtykke når du legger igjen kontaktopplysninger eller tilbud om hjelp.' : '');
-      }
-      consent.addEventListener('change', syncConsentRequirement);
-      personalFields.forEach((field) => field.addEventListener('input', syncConsentRequirement));
-      syncConsentRequirement();
-    </script>
   </body>
 </html>

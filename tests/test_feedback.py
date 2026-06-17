@@ -128,6 +128,29 @@ class FeedbackApiTests(unittest.TestCase):
             finally:
                 app_module.insert_submission = original_insert
 
+    def test_old_enough_token_rejects_contact_without_consent(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "feedback.sqlite3"
+            app_module, original_insert = self._patch_insert(db_path)
+            try:
+                client = TestClient(app)
+                token = create_form_token(now=time() - 3.5)
+                response = client.post(
+                    "/api/feedback",
+                    data={
+                        "topic": "bidra",
+                        "message": "Jeg kan hjelpe",
+                        "contact": "test@example.com",
+                        "form_token": token,
+                    },
+                    follow_redirects=False,
+                )
+                self.assertEqual(response.status_code, 400)
+                self.assertIn("Samtykke kreves", response.text)
+                self.assertEqual(list(iter_submissions(db_path)), [])
+            finally:
+                app_module.insert_submission = original_insert
+
     def test_old_enough_token_stores_submission(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             db_path = Path(tmp) / "feedback.sqlite3"
@@ -146,6 +169,17 @@ class FeedbackApiTests(unittest.TestCase):
                 self.assertEqual(rows[0]["message"], "Dette skal lagres")
             finally:
                 app_module.insert_submission = original_insert
+
+
+class FeedbackPageTests(unittest.TestCase):
+    def test_form_uses_csp_compatible_external_script(self) -> None:
+        form_html = Path("innspill/index.html").read_text()
+        self.assertIn('<script src="/assets/feedback-form.js" defer></script>', form_html)
+        self.assertNotIn("<script>", form_html)
+
+        form_script = Path("assets/feedback-form.js").read_text()
+        self.assertIn('fetch("/api/form-token"', form_script)
+        self.assertIn("consent.required = needsConsent", form_script)
 
 
 if __name__ == "__main__":
