@@ -1,6 +1,8 @@
 "use strict";
 
 const tokenInput = document.getElementById("form_token");
+const topic = document.getElementById("topic");
+const message = document.getElementById("message");
 const consent = document.getElementById("consent");
 const personalFields = ["name", "contact", "help_text"].map((id) =>
   document.getElementById(id),
@@ -27,8 +29,27 @@ function syncConsentRequirement() {
   );
 }
 
+function syncTopicValidity() {
+  topic.setCustomValidity(topic.value ? "" : "Velg hva innspillet gjelder.");
+}
+
+function syncMessageValidity() {
+  const length = message.value.trim().length;
+  if (length === 0) {
+    message.setCustomValidity("Skriv inn et innspill.");
+  } else if (length < 3) {
+    message.setCustomValidity("Innspillet må inneholde minst tre tegn.");
+  } else {
+    message.setCustomValidity("");
+  }
+}
+
+topic.addEventListener("change", syncTopicValidity);
+message.addEventListener("input", syncMessageValidity);
 consent.addEventListener("change", syncConsentRequirement);
 personalFields.forEach((field) =>
   field.addEventListener("input", syncConsentRequirement),
 );
+syncTopicValidity();
+syncMessageValidity();
 syncConsentRequirement();

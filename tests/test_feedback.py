@@ -180,6 +180,9 @@ class FeedbackPageTests(unittest.TestCase):
         form_script = Path("assets/feedback-form.js").read_text()
         self.assertIn('fetch("/api/form-token"', form_script)
         self.assertIn("consent.required = needsConsent", form_script)
+        self.assertIn("Velg hva innspillet gjelder.", form_script)
+        self.assertIn("Skriv inn et innspill.", form_script)
+        self.assertIn("Innspillet må inneholde minst tre tegn.", form_script)
 
 
 if __name__ == "__main__":
