@@ -171,6 +171,15 @@ class FeedbackApiTests(unittest.TestCase):
                 app_module.insert_submission = original_insert
 
 
+class HomepageParticipationTests(unittest.TestCase):
+    def test_homepage_prominently_asks_for_help_and_ideas(self) -> None:
+        homepage = Path("index.html").read_text()
+        self.assertIn('id="bidra"', homepage)
+        self.assertIn("Foreningen er liten, og vi trenger flere ideer", homepage)
+        self.assertIn("Del en ide eller meld at du kan hjelpe", homepage)
+        self.assertIn('href="/innspill/"', homepage)
+
+
 class FeedbackPageTests(unittest.TestCase):
     def test_form_uses_csp_compatible_external_script(self) -> None:
         form_html = Path("innspill/index.html").read_text()

@@ -6,6 +6,12 @@ Bikuben Barnepark er en nærmiljøpark i Høybråtenveien 69. Foreningen jobber 
 
 Høybråtenveien 69, 1086 Oslo
 
+## Vi trenger hjelp og ideer
+
+Foreningen er liten, og Bikuben trenger flere mennesker som vil bidra med ideer, praktisk hjelp og aktivitet i parken og huset.
+
+Fortell oss hva du savner i nærmiljøet, hva Bikuben kan brukes til, eller hva du kan hjelpe med. Det kan være arrangementer, praktisk arbeid, planter, mat, økonomi, foto, kommunikasjon eller noe helt annet.
+
 ## Innspill
 
 Besøkende kan dele ideer, tilbakemeldinger, meninger eller tilbud om å bidra via innspillsskjemaet: https://bikubenbarnepark.no/innspill/

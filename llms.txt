@@ -13,6 +13,7 @@ Key facts:
 - Area: Høybråten, bydel Stovner, Oslo
 - Primary image: drone overview at https://bikubenbarnepark.no/assets/park-social-1200x630.jpg
 - Primary video: decorative drone clip at https://bikubenbarnepark.no/assets/video/park-overview-background.mp4
+- The association explicitly seeks ideas, practical help, activities, and contact from people in the neighborhood.
 - Feedback form: https://bikubenbarnepark.no/innspill/
 - Privacy notice: https://bikubenbarnepark.no/personvern/
 - Feedback API endpoint: POST https://bikubenbarnepark.no/api/feedback
