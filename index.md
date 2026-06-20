@@ -10,7 +10,7 @@ Høybråtenveien 69, 1086 Oslo
 
 Foreningen er liten, og Bikuben trenger flere mennesker som vil bidra med ideer, praktisk hjelp og aktivitet i parken og huset.
 
-Fortell oss hva du savner i nærmiljøet, hva Bikuben kan brukes til, eller hva du kan hjelpe med. Det kan være arrangementer, praktisk arbeid, planter, mat, økonomi, foto, kommunikasjon eller noe helt annet.
+Fortell oss hva du savner i nærmiljøet, hva Bikuben kan brukes til, eller hva du kan hjelpe med. Det kan være arrangementer, praktisk arbeid, planter, mat, økonomi, foto, kommunikasjon eller noe helt annet. Bruk innspillsskjemaet for private eller anonyme innspill, eller Facebook-gruppen for å starte en åpen diskusjon: https://www.facebook.com/groups/bikubenbarnepark
 
 ## Innspill
 
