@@ -39,6 +39,7 @@ Foreningen arbeider for sosialt samvær og aktivitet i Bikuben Barnepark. Målet
 
 - Forening: FORENINGEN BIKUBEN BARNEPARK
 - Organisasjonsnummer: 934371275
+- Facebook-gruppe: https://www.facebook.com/groups/bikubenbarnepark
 
 ## Historie
 
